@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="simple-json_v1.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Lab_SlackBot/lib/simple-json_v1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
