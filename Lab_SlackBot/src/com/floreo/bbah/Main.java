@@ -14,8 +14,7 @@ public class Main {
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
 
-        // delete latter
-        System.out.println("Hello world");
+        // delete later
         System.out.println("Hello world");
 
 
