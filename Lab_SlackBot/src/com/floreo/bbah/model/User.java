@@ -34,27 +34,17 @@ public class User {
     }
 
     // TODO add getters to access private fields - Lynnisha
-    public String getId() {
-        return id;
-    }
+    public String getId() { return id; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name; }
 
-    public boolean getDeleted() {
-        return deleted;
-    }
+    public boolean getDeleted() { return deleted; }
 
-    public void setDeleted(boolean deleted) {
-        this.deleted = deleted;
-    }
+    public void setDeleted(boolean deleted) {this.deleted = deleted; }
 
     public String getColor() { return color; }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    public void setColor(String color) {this.color = color; }
     //not sure what should be happening with profile. Is it a Class? - LG
     /*public  getProfile() {return profile;}
     public void setProfile( profile) {this.profile = profile; }*/
