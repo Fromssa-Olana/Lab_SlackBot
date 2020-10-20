@@ -16,7 +16,6 @@ public class Main {
 
         // delete latter
         System.out.println("Hello world");
-        System.out.println("Hello world");
 
 
         // Post "Hello, world!" to the #bots channel
