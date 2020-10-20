@@ -113,7 +113,7 @@ public class Attachment {
         return image_url;
     }
 
-    public void setIm_url(String image_url) {
+    public void setImage_url(String image_url) {
         this.image_url = image_url;
     }
 
