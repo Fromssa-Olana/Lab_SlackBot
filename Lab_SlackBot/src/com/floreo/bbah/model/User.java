@@ -16,11 +16,7 @@ public class User {
     private String name;
     private boolean deleted;
     private String color;
-
-    // I think profile is a class but I'm not sure so have not finished this one
-    // private profile;
-    // public class Profile {}
-
+    private Profile profile;
     private boolean is_admin;
     private boolean is_owner;
     private boolean is_primary_owner;

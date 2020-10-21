@@ -4,23 +4,25 @@ import com.floreo.bbah.model.Channel;
 import com.floreo.bbah.model.Message;
 import com.floreo.bbah.network.Slack;
 import com.floreo.bbah.network.responses.*;
+import de.ralleytn.simple.json.JSONObject;
 
 import java.util.List;
 
 public class Bot {
 
-    // TODO: implement your bot logic!
 
     public Bot() {
 
     }
+    // TODO: implement your bot logic!
 
-    public void sendTaco(String taco){
-        sendMessageToBotsChannel(taco);
-    }
-
-    public void sendMessagePhoto(String hi, String attachment){
-        sendMessageToBotsChannel(hi, attachment);
+    /**
+     * Sends message to a slack group
+     *
+     * @param message
+     */
+    public void sendMessage(String message) {
+        sendMessageToBotsChannel(message);
     }
 
     //TODO: fix
@@ -33,7 +35,7 @@ public class Bot {
      */
     public void testApi() {
         Response apiTest = Slack.testApi();
-        System.out.println("API OK: " +apiTest.isOk() + "\n");
+        System.out.println("API OK: " + apiTest.isOk() + "\n");
     }
 
     /**
