@@ -146,22 +146,4 @@ public class Attachment {
 
     public void setTs(int ts) { this.ts = ts; }
 
-    // attachment constructor
-    public Attachment(String fallback, String color, String pretext, String author_name, String author_link, String author_icon, String title, String title_link, String text, Fields fields, String image_url, String thumb_url, String footer, String footer_icon, int ts) {
-        this.fallback = fallback;
-        this.color = color;
-        this.pretext = pretext;
-        this.author_name = author_name;
-        this.author_link = author_link;
-        this.author_icon = author_icon;
-        this.title = title;
-        this.title_link = title_link;
-        this.text = text;
-        this.fields = fields;
-        this.image_url = image_url;
-        this.thumb_url = thumb_url;
-        this.footer = footer;
-        this.footer_icon = footer_icon;
-        this.ts = ts;
-    }
 }
