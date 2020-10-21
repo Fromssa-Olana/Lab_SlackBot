@@ -14,8 +14,6 @@ public class Main {
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
 
-        // delete latter
-        System.out.println("Hello world");
 
 
         // Post "Hello, world!" to the #bots channel
