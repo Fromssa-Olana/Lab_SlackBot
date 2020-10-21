@@ -15,6 +15,19 @@ public class Bot {
 
     }
 
+    public void sendTaco(String taco){
+        sendMessageToBotsChannel(taco);
+    }
+
+    public void sendMessagePhoto(String hi, String attachment){
+        sendMessageToBotsChannel(hi, attachment);
+    }
+
+    //TODO: fix
+    //public void sendMessageWithAttachment(String message, String attachment){
+    //   Slack.sendMessageWithAttachments(message, attachment);
+    //}
+
     /**
      * Sample method: tests the Slack API. Prints a message indicating success or failure.
      */

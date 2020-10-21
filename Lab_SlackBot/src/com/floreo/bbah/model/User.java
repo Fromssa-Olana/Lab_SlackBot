@@ -18,7 +18,8 @@ public class User {
     private String color;
 
     // I think profile is a class but I'm not sure so have not finished this one
-    private profile;
+    // private profile;
+    // public class Profile {}
 
     private boolean is_admin;
     private boolean is_owner;
