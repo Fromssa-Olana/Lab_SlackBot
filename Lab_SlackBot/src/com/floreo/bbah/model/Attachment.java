@@ -9,7 +9,7 @@ import de.ralleytn.simple.json.JSONObject;
 
 public class Attachment {
 
-    // declare private fields
+    // implement private fields for each of the following Attachment JSON keys:
     private String fallback;
     private String color;
     private String pretext;
@@ -34,7 +34,6 @@ public class Attachment {
     public Attachment(JSONObject json) {
 
         // parse an attachment from the incoming json
-        public String getFallback() { return fallback; }
         if (json.get("fallback") != null) {
             this.fallback = (String) json.get("fallback");
         }
@@ -56,8 +55,11 @@ public class Attachment {
         if (json.get("title") != null) {
             this.title = (String) json.get("title");
         }
+        if (json.get("fields") != null) {
+            this.fields = (Fields) json.get("fields");
+        }
         if (json.get("title_link") != null) {
-            this.title_link = (String) json.get("fallback");
+            this.title_link = (String) json.get("title_link");
         }
         if (json.get("text") != null) {
             this.text = (String) json.get("text");
@@ -79,8 +81,6 @@ public class Attachment {
         }
     }
 
-    }
-
 
     /**
      * Methods below this lines are getters and setters to the field variables.
@@ -96,7 +96,7 @@ public class Attachment {
 
     public String getPretext() { return pretext; }
 
-    public void setPreText(String pretext) { this.pretext = pretext; }
+    public void setPretext(String pretext) { this.pretext = pretext; }
 
     public String getAuthor_name() { return author_name; }
 
@@ -122,6 +122,10 @@ public class Attachment {
 
     public void setText(String text) { this.text = text; }
 
+    public Fields getFields() { return fields; }
+
+    public void setFields(Fields fields) { this.fields = fields; }
+
     public String getImage_url() { return image_url; }
 
     public void setImage_url(String image_url) { this.image_url = image_url; }
@@ -143,7 +147,7 @@ public class Attachment {
     public void setTs(int ts) { this.ts = ts; }
 
     // attachment constructor
-    public Attachment(String fallback, String color, String pretext, String author_name, String author_link, String author_icon, String title, String title_link, String text,  String image_url, String thumb_url, String footer, String footer_icon, int ts) {
+    public Attachment(String fallback, String color, String pretext, String author_name, String author_link, String author_icon, String title, String title_link, String text, Fields fields, String image_url, String thumb_url, String footer, String footer_icon, int ts) {
         this.fallback = fallback;
         this.color = color;
         this.pretext = pretext;
@@ -153,6 +157,7 @@ public class Attachment {
         this.title = title;
         this.title_link = title_link;
         this.text = text;
+        this.fields = fields;
         this.image_url = image_url;
         this.thumb_url = thumb_url;
         this.footer = footer;
