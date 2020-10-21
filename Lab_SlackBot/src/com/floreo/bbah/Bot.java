@@ -14,7 +14,6 @@ public class Bot {
     public Bot() {
 
     }
-    // TODO: implement your bot logic!
 
     /**
      * Sends message to a slack group
@@ -23,10 +22,6 @@ public class Bot {
      */
     public void sendMessage(String message) {
         sendMessageToBotsChannel(message);
-    }
-
-    public void sendFunFacts(String fact) {
-
     }
 
     /**

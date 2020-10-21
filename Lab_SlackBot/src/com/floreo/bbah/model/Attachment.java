@@ -8,6 +8,8 @@ import de.ralleytn.simple.json.JSONObject;
  */
 
 public class Attachment {
+
+    // implement private fields for each of the following Attachment JSON keys:
     private String fallback;
     private String color;
     private String pretext;
@@ -30,6 +32,8 @@ public class Attachment {
      * @param json
      */
     public Attachment(JSONObject json) {
+
+        // parse an attachment from the incoming json
         if (json.get("fallback") != null) {
             this.fallback = (String) json.get("fallback");
         }
@@ -51,8 +55,11 @@ public class Attachment {
         if (json.get("title") != null) {
             this.title = (String) json.get("title");
         }
+        if (json.get("fields") != null) {
+            this.fields = (Fields) json.get("fields");
+        }
         if (json.get("title_link") != null) {
-            this.title_link = (String) json.get("fallback");
+            this.title_link = (String) json.get("title_link");
         }
         if (json.get("text") != null) {
             this.text = (String) json.get("text");
@@ -72,7 +79,6 @@ public class Attachment {
         if (json.get("ts") != null) {
             this.ts = (int) json.get("ts");
         }
-
     }
 
 
@@ -80,117 +86,64 @@ public class Attachment {
      * Methods below this lines are getters and setters to the field variables.
      *
      */
-    public String getFallback() {
+    public String getFallback() { return fallback; }
 
-        return fallback;
-    }
+    public void setFallback(String fallback) { this.fallback = fallback; }
 
-    public void setFallback(String fallback) {
-        this.fallback = fallback;
-    }
+    public String getColor() { return color; }
 
-    public String getColor() {
-        return color;
-    }
+    public void setColor(String color) { this.color = color; }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    public String getPretext() { return pretext; }
 
-    public String getPretext() {
-        return pretext;
-    }
+    public void setPretext(String pretext) { this.pretext = pretext; }
 
-    public void setPreText(String pretext) {
-        this.pretext = pretext;
-    }
+    public String getAuthor_name() { return author_name; }
 
-    public String getAuthor_name() {
-        return author_name;
-    }
+    public void setAuthor_name(String author_name) { this.author_name = author_name; }
 
-    public void setAuthor_name(String author_name) {
-        this.author_name = author_name;
-    }
+    public String getAuthor_link() { return author_link; }
 
-    public String getAuthor_link() {
-        return author_link;
-    }
+    public void setAuthor_link(String author_link) { this.author_link = author_link; }
 
-    public void setAuthor_link(String author_link) {
-        this.author_link = author_link;
-    }
+    public String getAuthor_icon() { return author_icon; }
 
-    public String getAuthor_icon() {
-        return author_icon;
-    }
+    public void setAuthor_icon(String author_icon) { this.author_icon = author_icon; }
 
-    public void setAuthor_icon(String author_icon) {
-        this.author_icon = author_icon;
-    }
+    public String getTitle() { return title; }
 
-    public String getTitle() {
-        return title;
-    }
+    public void setTitle(String title) { this.title = title; }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public String getTitle_link() { return title_link; }
 
-    public String getTitle_link() {
-        return title_link;
-    }
+    public void setTitle_link(String title_link) { this.title_link = title_link; }
 
-    public void setTitle_link(String title_link) {
-        this.title_link = title_link;
-    }
+    public String getText() { return text; }
 
-    public String getText() {
-        return text;
-    }
+    public void setText(String text) { this.text = text; }
 
-    public void setText(String text) {
-        this.text = text;
-    }
+    public Fields getFields() { return fields; }
 
-    public String getImage_url() {
-        return image_url;
-    }
+    public void setFields(Fields fields) { this.fields = fields; }
 
-    public void setImage_url(String image_url) {
-        this.image_url = image_url;
-    }
+    public String getImage_url() { return image_url; }
 
-    public String getThumb_url() {
-        return thumb_url;
-    }
+    public void setImage_url(String image_url) { this.image_url = image_url; }
 
-    public void setThumb_url(String thumb_url) {
-        this.thumb_url = thumb_url;
-    }
+    public String getThumb_url() { return thumb_url; }
 
-    public String getFooter() {
-        return footer;
-    }
+    public void setThumb_url(String thumb_url) { this.thumb_url = thumb_url; }
 
-    public void setFooter(String footer) {
-        this.footer = footer;
-    }
+    public String getFooter() { return footer; }
 
-    public String getFooter_icon() {
-        return footer_icon;
-    }
+    public void setFooter(String footer) { this.footer = footer; }
 
-    public void setFooter_icon(String footer_icon) {
-        this.footer_icon = footer_icon;
-    }
+    public String getFooter_icon() { return footer_icon; }
 
-    public int getTs() {
-        return ts;
-    }
+    public void setFooter_icon(String footer_icon) { this.footer_icon = footer_icon; }
 
-    public void setTs(int ts) {
-        this.ts = ts;
-    }
+    public int getTs() { return ts; }
+
+    public void setTs(int ts) { this.ts = ts; }
 
 }

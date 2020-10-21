@@ -1,5 +1,6 @@
 package com.floreo.bbah;
 
+import com.floreo.bbah.model.RandomCat;
 import com.floreo.bbah.network.Slack;
 
 public class Main {
@@ -14,13 +15,8 @@ public class Main {
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
 
-
-
-        // Post "Hello, world!" to the #bots channel
-        //myBot.sendMessage("Hello, world!");
-
-        // Post a pineapple photo to the #bots channel
-        //myBot.sendMessage("http://weknowyourdreams.com/images/pineapple/pineapple-07.jpg");
+        // Post a random taco cat photo with a short message to the #bots channel
+        myBot.sendMessage("Here's a random taco cat. \n" + RandomCat.getPictureLink());
 
     }
 }

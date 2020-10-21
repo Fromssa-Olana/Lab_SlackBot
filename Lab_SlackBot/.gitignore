@@ -1,7 +1,8 @@
 .DS_Store
 out/
 .idea/
+*.xml
 *.class
 *.iml
 *.iws
-api_token.txt
+../api_token.txt
