@@ -14,7 +14,6 @@ public class Bot {
     public Bot() {
 
     }
-    // TODO: implement your bot logic!
 
     /**
      * Sends message to a slack group
@@ -24,11 +23,6 @@ public class Bot {
     public void sendMessage(String message) {
         sendMessageToBotsChannel(message);
     }
-
-    //TODO: fix
-    //public void sendMessageWithAttachment(String message, String attachment){
-    //   Slack.sendMessageWithAttachments(message, attachment);
-    //}
 
     /**
      * Sample method: tests the Slack API. Prints a message indicating success or failure.

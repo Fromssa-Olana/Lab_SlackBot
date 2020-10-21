@@ -15,11 +15,6 @@ public class Main {
 
         myBot.listMessages(Slack.BOTS_CHANNEL_ID);
 
-        //Attachment attachment = new Attachment("Required plain-text summary of the attachment.", "#36a64f",
-               // "Optional text that appears above the attachment block","Bobby Tables",
-                //"http://flickr.com/bobby/","http://flickr.com/icons/bobby.jpg");
-
-
         // Post "I like cats" to the #bots channel
         myBot.sendMessage("I like cats");
 
